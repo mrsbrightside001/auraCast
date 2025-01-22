@@ -1,6 +1,13 @@
 body {
-  background: #f9f7fe;
+  background: radial-gradient(
+    circle at 12.3% 19.3%,
+    rgb(85, 88, 218) 0%,
+    rgb(95, 209, 249) 100.2%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: "Roboto", sans-serif;
+  color: #333546;
 }
 
 header {
@@ -16,10 +23,16 @@ footer {
   color: rgba (0, 0, 0, 0.6);
 }
 a {
-  color: #3d9acf;
+  color: rgb(85, 88, 218);
 }
 main {
   padding: 30px 0;
+}
+
+.auracast-logo {
+  display: block;
+  max-width: 200px;
+  margin-bottom: 20px;
 }
 
 .weather-app {
@@ -62,7 +75,7 @@ main {
 }
 
 .search-form-btn {
-  background-color: #3d9acf;
+  background-color: rgb(85, 88, 218);
   border: none;
   border-radius: 6px;
   color: white;
