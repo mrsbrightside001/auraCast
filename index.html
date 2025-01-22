@@ -4,26 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>auraCast App</title>
   </head>
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-btn" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Prague</h1>
-          <p>
-            Wednesday 14:33, few clouds
-            <br />
-            Humidity: 40%, Wind: 6.69km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Prague</h1>
+            <p class="weather-app-details">
+              Wednesday 14:33, few clouds
+              <br />
+              Humidity: <strong>40%</strong>, Wind: <strong>6.69km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌤</div>
+            <div class="weather-app-temperature">10</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
         </div>
-        <div>🌤 10°C</div>
       </main>
       <footer>
         Coded by
