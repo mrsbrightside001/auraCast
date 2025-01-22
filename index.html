@@ -30,18 +30,20 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city" id="weather-app-city">Prague</h1>
+            <h1 class="weather-app-city" id="weather-app-city"></h1>
             <p class="weather-app-details">
-              Wednesday 14:33, few clouds
+              <span id="time"></span>, <span id="description"> few clouds</span>
               <br />
-              Humidity: <strong>40%</strong>, Wind: <strong>6.69km/h</strong>
+              Humidity: <strong><span id="humidity"></span></strong>, Wind:
+              <strong><span id="wind-speed"></span></strong>
             </p>
           </div>
           <div class="weather-app-temperature-container">
             <div class="weather-app-icon">🌤</div>
-            <div class="weather-app-temperature" id="weather-app-temperature">
-              10
-            </div>
+            <div
+              class="weather-app-temperature"
+              id="weather-app-temperature"
+            ></div>
             <div class="weather-app-unit">°C</div>
           </div>
         </div>
